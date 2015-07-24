@@ -1,0 +1,122 @@
+ul.side-nav.fixed {
+	top: 64px;
+}
+
+ul.side-nav.fixed li {
+	line-height: 44px;
+}
+
+ul.side-nav.fixed a {
+	line-height: 44px;
+	height: 44px;
+}
+
+
+ul.side-nav.fixed {
+  overflow: hidden; 
+}
+
+ul.side-nav.fixed ul.collapsible-accordion {
+    background-color: #FFF; 
+}
+  
+ul.side-nav.fixed:hover {
+    overflow-y: auto; 
+}
+
+.top-nav .nav-wrapper .page-title {
+	font-size: 24px;
+}
+
+.nav-wrapper .top-nav-actions a{
+	margin-right: 10px;
+}
+
+.nav-wrapper .top-nav-actions a:last-child {
+	margin-right: 0px;
+}
+
+.nav-wrapper .top-nav-actions i {
+	display: inline-block;
+}
+
+.top-nav .header-container {
+	padding-left: 28px;
+	padding-right: 25px;
+}
+
+ul.side-nav.fixed li.logo {
+  text-align: center;
+  padding-top: 25px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #ddd; 
+}
+  
+ul.side-nav.fixed li.logo:hover {
+    background-color: transparent; 
+}
+
+#logo-container {
+	display: block;
+	text-align: left;
+	height: 100px;
+	line-height: 1.5;
+	padding: 0 15px;
+}
+
+#logo-container img {
+	max-height: 56px;
+}
+
+a.button-collapse.top-nav {
+	position: absolute;
+  	text-align: center;
+  	height: 48px;
+  	width: 48px;
+  	left: 0;
+  	top: 0;
+  	float: none;
+  	margin-left: 1.5rem;
+  	color: #fff;
+  	font-size: 32px;
+  	z-index: 2;
+}
+
+#main {
+	padding-left: 240px; 
+}
+
+ul.side-nav.fixed ul.collapsible-accordion a.collapsible-header:after {
+	speak: none;
+  	display: inline-block;
+  	font-family: "Material-Design-Icons";
+  	font-style: normal;
+  	font-weight: normal;
+  	font-variant: normal;
+  	text-rendering: auto;
+	content: "\e7c1";
+	float:right;
+	font-size: 20px;
+}
+
+ul.side-nav.fixed ul.collapsible-accordion a.collapsible-header.active:after {
+	speak: none;
+  	display: inline-block;
+  	font-family: "Material-Design-Icons";
+  	font-style: normal;
+  	font-weight: normal;
+  	font-variant: normal;
+  	text-rendering: auto;
+	content: "\e7c4";
+	float:right;
+	font-size: 20px;
+}
+
+ul.side-nav.fixed li a span {
+	font-size: 17px;
+	margin-right: 9px;
+}
+
+ul.side-nav.fixed .collapsible-body li a {
+	margin: 0 1rem 0 2.8rem;
+}
