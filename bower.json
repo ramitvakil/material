@@ -1,0 +1,20 @@
+{
+  "name": "extraMaterial",
+  "version": "1.0.0",
+  "authors": [
+    "EV60 Team"
+  ],
+  "description": "Material Design template for EV60",
+  "keywords": [
+    "Material",
+    "EV60"
+  ],
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
