@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>Angular Material Demo - RV</title>
+     <!-- Angular Material CSS now available via Google CDN; version 0.11.2 used here -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.2/angular-material.min.css">
+
+<body ng-controller="MyController" layout="column">
+    <section layout="row" flex>
+        <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
+            <md-toolbar class="md-warn">
+                <div class="md-toolbar-tools">
+                    <h1 class="md-display-4">Ramit Vakil</h1> </div>
+            </md-toolbar>
+            <md-card> <img alt="Ramit Gravatar image" src="https://secure.gravatar.com/avatar/633a9a8e27f3d4a0547003acb5484005?s=300">
+                <md-card-content>
+                    <h2 class="md-title">About Me</h2>
+                    <p> A passionate Blogger and Developer. He has more then 4 years of experience on web application development. He loves to work in javascript programming language.At present he is exploring W3C Web Component specification. </p>
+                </md-card-content>
+                <md-card> </md-sidenav>
+        <md-content layout="row">
+            <md-card flex> <img alt="Education" src="http://static1.squarespace.com/static/55c9b684e4b086b54437c450/t/561cf67de4b0ad21244c7797/1444738685288/BG+SQRSPCE.jpg">
+                <md-card-content>
+                    <h2 class="md-title">Education</h2>
+                    <md-list>
+                        <md-list-item class="md-1-line">
+                            <p class="md-list-item-text"> He has done B.E in Electrical and Electronics subject from Manipal University Manipal. He is currently persuing MBA in general business administraion from NMIMS university. </p>
+                        </md-list-item>
+                    </md-list>
+                </md-card-content>
+            </md-card>
+            <md-card flex> <img alt="Sandeep Gravatar image" src="http://robinberzinmd.com/wp-content/uploads/2014/05/mac-air-iphone-wood-table-pic-2-16x9.jpg">
+                <md-card-content>
+                    <h2 class="md-title">Skills</h2>
+                    <div layout>
+                        <div flex="40" layout layout-align="center center"> <span class="md-body-1 md-primary">JavaScript</span> </div>
+                        <md-slider flex ng-model="80" min="1" max="100" class="md-primary"> </md-slider>
+                    </div>
+                    <div layout>
+                        <div flex="40" layout layout-align="center center"> <span class="md-body-1 md-warn">AngularJS</span> </div>
+                        <md-slider flex ng-model="90" min="1" max="100" class="md-warn"> </md-slider>
+                    </div>
+                    <div layout>
+                        <div flex="40" layout layout-align="center center"> <span class="md-body-1 md-primary">Jquery</span> </div>
+                        <md-slider flex ng-model="70" min="1" max="100" class="md-primary"> </md-slider>
+                    </div>
+                    <div layout>
+                        <div flex="40" layout layout-align="center center"> <span class="md-body-1 md-warn">CSS</span> </div>
+                        <md-slider flex ng-model="60" min="1" max="100" class="md-warn"> </md-slider>
+                    </div>
+                    <div layout>
+                        <div flex="40" layout layout-align="center center"> <span class="md-body-1 md-primary">Java</span> </div>
+                        <md-slider flex ng-model="50" min="1" max="100" class="md-primary"> </md-slider>
+                    </div>
+                </md-card-content>
+            </md-card>
+            <md-card flex> <img alt="Contact Me" src="http://stand-inc.com/wp-content/uploads/2014/02/Reach-Me-Contact-Banner.jpg">
+                <md-card-content>
+                    <h2 class="md-title">Contact Me</h2>
+                    <div layout>
+                        <div flex="20" layout layout-align="left center"> <span class="md-body-1 md-primary">Email</span> </div> <span flex class="md-primary" layout-align="left center"> ramitvakil@gmail.com </span> </div>
+                    <div layout>
+                        <div flex="20" layout layout-align="left center"> <span class="md-body-1 md-primary">Blog</span> </div> <span flex class="md-primary" layout-align="left center"> www.ramitvakil.wordpress.com </span> </div>
+                </md-card-content>
+            </md-card>
+        </md-content>
+    </section>
+  <!-- Angular Material Dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
+
+
+    <!-- Angular Material Javascript now available via Google CDN; version 0.11.2 used here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.2/angular-material.min.js"></script>
+    <script>
+    var myApp = angular.module("myApp", ["ngMaterial"]);
+    myApp.controller("MyController", function($scope) {
+        $scope.buttonName = "Click Me"
+    });
+    </script>
+</body>
+
+</html>
